@@ -1,0 +1,27 @@
+{
+  "name": "tana-mcp-server",
+  "version": "1.0.0",
+  "description": "Tana MCP Server with HTTP transport for ChatGPT",
+  "main": "dist/server-http.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server-http.js",
+    "dev": "ts-node src/server-http.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
