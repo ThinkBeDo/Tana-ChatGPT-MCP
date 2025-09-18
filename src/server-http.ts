@@ -13,7 +13,7 @@ import { createTanaMCPServer } from './tana-mcp-server.js';
 loadEnv();
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT);
 const MCP_SERVER_KEY = process.env.MCP_SERVER_KEY || 'dev-key-change-in-production';
 
 const allowedOrigins = [
